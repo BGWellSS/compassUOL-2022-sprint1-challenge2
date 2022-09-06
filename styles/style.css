@@ -432,6 +432,168 @@ a {
   background: #F1EFF6;
 }
 
+#panel5 {
+  font-family: "TT Norms Pro";
+  background-color: #FFA451;
+}
+#panel5 .panel-container {
+  width: 100%;
+  padding: 0;
+}
+#panel5 .panel-header {
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px 24px 32px;
+}
+#panel5 .header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#panel5 .header-container a {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #ffffff;
+  color: #27214D;
+  border-radius: 100px;
+}
+#panel5 .header-container a span {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+#panel5 .header-container img {
+  max-width: 176px;
+}
+#panel5 .panel-body {
+  height: 60vh;
+  background-color: #ffffff;
+  border-radius: 16px 16px 0 0;
+}
+#panel5 .body-container {
+  padding: 30px 24px 0 24px;
+}
+#panel5 .desc-header {
+  margin-bottom: 30px;
+}
+#panel5 .desc-header .iten-name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  letter-spacing: -0.01rem;
+  color: #27214D;
+}
+#panel5 .qtd-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+#panel5 .qtd-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#panel5 .qtd-btn {
+  background: #FFF2E7;
+  height: 32px;
+  width: 32px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+}
+#panel5 .itens-qtd,
+#panel5 .total-value {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: -0.01rem;
+  color: #27214D;
+}
+#panel5 .itens-qtd {
+  margin: 0 24px;
+}
+#panel5 .total-value span {
+  margin-left: 5px;
+}
+#panel5 hr {
+  border: 1px solid #F3F3F3;
+}
+#panel5 .desc-tags {
+  margin: 16px 0 12px 0;
+}
+#panel5 .tags-title {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+#panel5 .tags-title::after {
+  content: "";
+  display: block;
+  background-color: #FFA451;
+  height: 2px;
+  width: 56px;
+  margin-top: 2px;
+}
+#panel5 .tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+#panel5 .tag-iten {
+  background-color: #FAFAFA;
+  padding: 6px 8px;
+  border-radius: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #403E3E;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+#panel5 .desc-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  color: #333333;
+  letter-spacing: -0.01rem;
+  margin: 14px 0;
+}
+#panel5 .store-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#panel5 .store-options .favor-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background-color: #FFF7F0;
+  border-radius: 100px;
+}
+#panel5 .store-options .add-to-basket {
+  background-color: #FFA451;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 14px 58px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.01rem;
+  border: none;
+  outline: none;
+}
+
 .panel-navigation {
   margin-top: 3rem;
 }
