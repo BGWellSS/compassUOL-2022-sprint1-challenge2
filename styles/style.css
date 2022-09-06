@@ -667,4 +667,32 @@ a {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.32rem;
+}
+
+@media (max-width: 768px) {
+  .panels .panels-container {
+    border: 0;
+    border-radius: 0;
+  }
+  .panels .panels-container .panel {
+    height: 100vh;
+  }
+  #panel2 .upside,
+#panel3 .upside {
+    height: 57vh;
+  }
+  #panel2 .bottomside,
+#panel3 .bottomside {
+    height: 43vh;
+  }
+}
+@media (max-width: 320px) {
+  .panel-content .panel-title {
+    font-size: 2.04rem;
+    line-height: 2.652rem;
+  }
+  .panel-content .panel-description {
+    font-size: 1.53rem;
+    line-height: 1.989rem;
+  }
 }/*# sourceMappingURL=style.css.map */

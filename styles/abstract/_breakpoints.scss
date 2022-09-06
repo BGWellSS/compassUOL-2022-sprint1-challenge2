@@ -8,8 +8,42 @@
 
 // Medium devices (mobile devices)
 @media (max-width: 768px) {
+  .panels {
+    .panels-container {
+      border: 0;
+      border-radius: 0;
+
+      .panel {
+        height: 100vh;
+      }
+    }
+  }
+
+  #panel2,
+  #panel3 {
+    .upside {
+      height: 57vh
+    }
+
+    .bottomside {
+      height: 43vh
+    }
+  }
 }
 
 // Small devices (small mobile devices)
 @media (max-width: 320px) {
+  .panel-content {
+    .panel-title {
+      $temp-font: calc($title-font-size * 0.85);
+      font-size: $temp-font;
+      line-height: calc($temp-font * 1.3);
+    }
+
+    .panel-description {
+      $temp-font: calc($descr-font-size * 0.85);
+      font-size: $temp-font;
+      line-height: calc($temp-font * 1.3);
+    }
+  }
 }
