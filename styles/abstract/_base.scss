@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+html {
+    font-size: $html-font-size;
+    scroll-behavior: smooth;
+}
+// basic reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
