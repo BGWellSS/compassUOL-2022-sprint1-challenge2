@@ -69,7 +69,7 @@ a {
   animation: moveFromLeft 1s ease both;
 }
 
-#panel2 .panel-container {
+#panel2 .panel-container, #panel3 .panel-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,10 +137,10 @@ a {
   line-height: 4rem;
 }
 
-#panel2 {
+#panel2, #panel3 {
   display: block;
 }
-#panel2 .upside {
+#panel2 .upside, #panel3 .upside {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -149,7 +149,7 @@ a {
   width: 100%;
   height: calc(57vh - 20px);
 }
-#panel2 .bottomside {
+#panel2 .bottomside, #panel3 .bottomside {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,24 +158,51 @@ a {
   font-family: "TT Norms Pro";
   padding-top: 40px;
 }
-#panel2 .bottomside .desc-title {
+#panel2 .bottomside .desc-title, #panel3 .bottomside .desc-title {
   font-weight: bold;
   font-size: 1.6rem;
   letter-spacing: -0.01rem;
   color: #27214D;
 }
-#panel2 .bottomside .desc-content {
+#panel2 .bottomside .desc-content, #panel3 .bottomside .desc-content {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: -0.01rem;
   margin-top: 8px;
   color: #5D577E;
 }
-#panel2 .desc-container {
+#panel2 .desc-container, #panel3 .desc-container {
   box-sizing: content-box;
   width: 100%;
   max-width: 330px;
   padding: 0 24px;
+}
+
+#panel3 .bottomside form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#panel3 .bottomside #name {
+  height: 54px;
+  margin-top: 17px;
+  border: 0;
+  background: #F7F5F5;
+  border-radius: 10px;
+  padding: 16px 0 16px 15px;
+  font-size: 1.6rem;
+}
+#panel3 .bottomside #name:focus {
+  outline: 0;
+}
+#panel3 .bottomside #name::-moz-placeholder {
+  color: rgba 194, 189, 189, 0.7;
+}
+#panel3 .bottomside #name:-ms-input-placeholder {
+  color: rgba 194, 189, 189, 0.7;
+}
+#panel3 .bottomside #name::placeholder {
+  color: rgba 194, 189, 189, 0.7;
 }
 
 .panel-navigation {
@@ -225,6 +252,23 @@ a {
   align-items: center;
   width: 100%;
   height: 5.6rem;
+  border-radius: 10px;
+  background: #FFA451;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.32rem;
+}
+
+#panel3 .nav-continue {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5.6rem;
+  border: none;
   border-radius: 10px;
   background: #FFA451;
   color: #ffffff;

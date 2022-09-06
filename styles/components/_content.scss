@@ -39,7 +39,7 @@
     }
   }
 }
-#panel2 {
+#panel2, #panel3 {
   display: block;
   .upside {
     display: flex;
@@ -77,5 +77,29 @@
     width: 100%;
     max-width: 330px;
     padding: 0 24px;
+  }
+}
+#panel3 {
+  .bottomside {
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    #name {
+      height: 54px;
+      margin-top: 17px;
+      border: 0;
+      background: #F7F5F5;
+      border-radius: 10px;
+      padding: 16px 0 16px 15px;
+      font-size: 1.6rem;
+      &:focus {
+        outline: 0;
+      }
+      &::placeholder {
+        color: rgba (194, 189, 189, 0.7);
+      }
+    }
   }
 }
