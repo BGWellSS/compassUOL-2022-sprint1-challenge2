@@ -47,3 +47,71 @@
     }
   }
 }
+
+// height adjust
+@media (max-height: 800px) {
+  html {
+    font-size: 60%;
+  }
+  #panel5 {
+
+    .panel-header {
+      padding: 15px 24px 22px;
+    }
+    .body-container {
+      padding: 20px 24px 0 20px;
+    }
+    .desc-header {
+      margin-bottom: 15px;
+      .qtd-container {
+        margin-top: 15px;
+      }
+    }
+    .desc-tags {
+      margin: 15px 0 10px 0;
+    }
+  }
+}
+@media (max-height: 600px) {
+  html {
+    font-size: 50%;
+  }
+  #panel2, #panel3 {
+    .upside {padding-bottom: 15px;}
+    .bottomside {
+      padding: 15px 10px;
+    }
+    .image-container {
+      img {
+        max-width: 200px;
+      }
+    }
+    .nav-continue {margin-top: 30px;}
+  }
+  #panel4 {
+    .store-recommended {
+      margin: 10px 0 0 10px;
+    }
+    .store-tab {
+      margin: 10px 0 0 10px;
+    }
+  }
+  #panel5 {
+
+    .panel-header {
+      padding: 15px 24px 22px;
+    }
+    .body-container {
+      padding: 20px 24px 0 20px;
+    }
+    .desc-header {
+      margin-bottom: 15px;
+      .qtd-container {
+        margin-top: 15px;
+      }
+    }
+    .desc-tags {
+      margin: 15px 0 10px 0;
+    }
+  }
+}

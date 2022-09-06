@@ -695,4 +695,62 @@ a {
     font-size: 1.53rem;
     line-height: 1.989rem;
   }
+}
+@media (max-height: 800px) {
+  html {
+    font-size: 60%;
+  }
+  #panel5 .panel-header {
+    padding: 15px 24px 22px;
+  }
+  #panel5 .body-container {
+    padding: 20px 24px 0 20px;
+  }
+  #panel5 .desc-header {
+    margin-bottom: 15px;
+  }
+  #panel5 .desc-header .qtd-container {
+    margin-top: 15px;
+  }
+  #panel5 .desc-tags {
+    margin: 15px 0 10px 0;
+  }
+}
+@media (max-height: 600px) {
+  html {
+    font-size: 50%;
+  }
+  #panel2 .upside, #panel3 .upside {
+    padding-bottom: 15px;
+  }
+  #panel2 .bottomside, #panel3 .bottomside {
+    padding: 15px 10px;
+  }
+  #panel2 .image-container img, #panel3 .image-container img {
+    max-width: 200px;
+  }
+  #panel2 .nav-continue, #panel3 .nav-continue {
+    margin-top: 30px;
+  }
+  #panel4 .store-recommended {
+    margin: 10px 0 0 10px;
+  }
+  #panel4 .store-tab {
+    margin: 10px 0 0 10px;
+  }
+  #panel5 .panel-header {
+    padding: 15px 24px 22px;
+  }
+  #panel5 .body-container {
+    padding: 20px 24px 0 20px;
+  }
+  #panel5 .desc-header {
+    margin-bottom: 15px;
+  }
+  #panel5 .desc-header .qtd-container {
+    margin-top: 15px;
+  }
+  #panel5 .desc-tags {
+    margin: 15px 0 10px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
