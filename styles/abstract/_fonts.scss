@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url(./../../styles/fonts/TTNormsProRegular.otf);
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url(./../../styles/fonts/TTNormsProBold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url(./../../styles/fonts/TTNormsProItalic.otf);
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url(./../../styles/fonts/TTNormsProBoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}

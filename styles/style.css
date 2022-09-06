@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(./../../styles/fonts/TTNormsProRegular.otf);
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(./../../styles/fonts/TTNormsProBold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(./../../styles/fonts/TTNormsProItalic.otf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(./../../styles/fonts/TTNormsProBoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.panels {
+  background-color: #FFA451;
+}
+.panels .panels-container {
+  height: 100vh;
+  max-width: 45rem;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 10px solid #363636;
+  border-top: 20px solid #363636;
+  border-bottom: 20px solid #363636;
+  border-radius: 25px;
+}
+.panels .panels-container .panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  width: 100%;
+  background: #ffffff;
+}
+.panels .panels-container .panel .panel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3.5rem;
+}
+.panels .panels-container .panel.scroll-left .panel-container {
+  -webkit-animation: moveFromRight 1s ease both;
+  animation: moveFromRight 1s ease both;
+}
+.panels .panels-container .panel.scroll-right .panel-container {
+  -webkit-animation: moveFromLeft 1s ease both;
+  animation: moveFromLeft 1s ease both;
+}
+
+@-webkit-keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+}
+@keyframes moveFromRight {
+  from {
+    transform: translateX(100%);
+  }
+}
+.panel-content {
+  text-align: center;
+}
+.panel-content .panel-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.12rem;
+}
+.panel-content .panel-description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.34rem;
+  margin-top: 2.5rem;
+}
+
+#panel1 {
+  font-family: "Bad Script", cursive;
+}
+#panel1 .panel-content img {
+  max-width: 113px;
+  max-height: 164.94px;
+}
+#panel1 .panel-content a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+}
+#panel1 .panel-content span {
+  padding: 0 46px;
+  background-color: #FFA451;
+  border-radius: 16px 0;
+}
+#panel1 .panel-content span p {
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+.panel-navigation {
+  margin-top: 3rem;
+}
+.panel-navigation .nav-report {
+  display: flex;
+  justify-content: center;
+}
+.panel-navigation .nav-report .nav-dot {
+  box-sizing: initial;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0 1.7rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+.panel-navigation .nav-report .nav-dot.active {
+  background: #FFA451;
+  border-color: #FFA451;
+}
+.panel-navigation .nav-container {
+  display: flex;
+  justify-content: center;
+}
+.panel-navigation .nav-container .nav-back ~ .nav-skip {
+  margin-left: 10rem;
+}
+.panel-navigation .nav-container .nav-back, .panel-navigation .nav-container .nav-skip {
+  display: flex;
+  justify-content: center;
+}
+.panel-navigation .nav-container .nav-back a, .panel-navigation .nav-container .nav-skip a {
+  color: #FFA451;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.32rem;
+}
+
+.nav-continue {
+  margin-top: 80px;
+}
+.nav-continue a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 10px;
+  background: #FFA451;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.32rem;
+}/*# sourceMappingURL=style.css.map */

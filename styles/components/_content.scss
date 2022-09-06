@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.panel-content {
+  text-align: center;
+  .panel-title {
+    font-size: $title-font-size;
+    font-weight: 600;
+    line-height: calc($title-font-size * 1.3);
+  }
+  .panel-description {
+    font-size: $descr-font-size;
+    font-weight: 400;
+    line-height: calc($descr-font-size * 1.3);
+    margin-top: 2.5rem;
+  }
+}
+#panel1 {
+  font-family: $font-family-logo;
+  .panel-content {
+    img {
+      max-width: 113px;
+      max-height: 164.94px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    span {
+      padding: 0 46px;
+      background-color: $main-color;
+      border-radius: 16px 0;
+      p {
+        font-size: 2.4rem;
+        line-height: 4rem;
+      }
+    }
+  }
+}
