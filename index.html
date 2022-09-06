@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+
+  <script src="./js/scroller.js"></script>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Desafio 2</title>
+</head>
+
+<body>
+  <main class="panels">
+    <div class="panels-container">
+      <div class="panel" id="panel1">
+        <div class="panel-container">
+          <div class="panel-content">
+            <a href="#panel2" class="app-logo" onclick="scrollfRight(2, 5)">
+              <img src="./images/logo.svg" alt="Fruit Hub logo">
+              <span>
+                <p>Fruit Hub</p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel2">
+        <div class="panel-container">
+          <div class="upside">
+            <div class="image-container">
+              <img src="./images/fruits1.svg" alt="Customer quickly receiving their purchases">
+            </div>
+          </div>
+          <div class="bottomside">
+            <div class="desc-container">
+              <h2 class="desc-title">Get The Freshest Fruit Salad Combo</h2>
+              <p class="desc-content">We deliver the best and freshest fruit salad in town. Order for a combo today!!!
+              </p>
+              <div class="nav-continue">
+                <a href="#panel3" onclick="scrollfRight(3, 5)">Let’s Continue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel3">
+        <div class="panel-container">
+          <div class="upside">
+            <div class="image-container">
+              <img src="./images/fruits2.svg" alt="Customer quickly receiving their purchases">
+            </div>
+          </div>
+          <div class="bottomside">
+            <div class="desc-container">
+              <h2 class="desc-title">What is your firstname?</h2>
+              <form action="#panel4" target="_self" onsubmit="scrollfRight(4, 5)">
+                <input type="text" name="name" placeholder="Your name" id="name">
+                <input type="submit" value="Start Ordering" class="nav-continue" onclick="scrollfRight(4, 5)">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel4">
+        <div class="panel-container">
+          <div class="home-header">
+            <div class="heada">
+              <div class="user-menu">
+                <a href="#panel1">
+                  <img src="./images/theme/menu_icon.svg" alt="Menu Icon" onclick="scrollfLeft(1, 5)">
+                </a>
+                <span class="user-greetings">Welcome, </span>
+                <span id="username-field">Guest</span>
+                <span class="user-greetings-end">.</span>
+              </div>
+              <div class="user-basket">
+                <img src="./images/theme/shopping_basket.svg" alt="Shop basket">
+              </div>
+            </div>
+            <div class="headb">
+              <div class="search-icon"><img src="./images/theme/search_icon.svg" alt="search icon"></div>
+              <input type="search" placeholder="Search for fruit salad combos">
+              <div class="settings-icon"><img src="./images/theme/settings_icon.svg" alt="settings icon"></div>
+            </div>
+          </div>
+          <div class="store-section">
+            <div class="store-filters">
+              <div class="filter-container">
+                <div class="filter-iten"><span class="filter-text">All</span></div>
+                <div class="filter-iten"><span class="filter-text">Salad Combo</span></div>
+                <div class="filter-iten"><span class="filter-text">Berry Combo</span></div>
+                <div class="filter-iten"><span class="filter-text">Mango Berry</span></div>
+              </div>
+            </div>
+            <div class="store-recommended">
+              <span class="section-title active">Recommended Combo</span>
+              <div class="store-itens-container">
+                <div class="store-iten">
+                  <div class="image-container">
+                    <div class="grid-space"></div>
+                    <img class="iten-img" src="./images/store/food-00002-small.png" alt="food recommended 1">
+                    <img class="favor-icon" src="./images/theme/favorite_icon.svg" alt="food favorite icon">
+                  </div>
+                  <h2 class="iten-title">Honey lime combo</h2>
+                  <div class="iten-price">
+                    <div class="iten-value">
+                      <img class="currency-unit" src="./images/theme/currency_001_orange.svg" alt="Currency unit icon">
+                      <p class="price-value">2,000</p>
+                    </div>
+                    <span class="iten-add-basket"><img src="./images/theme/plus_icon.svg" alt="Food add basket"></span>
+                  </div>
+                </div>
+                <div class="store-iten">
+                  <div class="image-container">
+                    <div class="grid-space"></div>
+                    <img class="iten-img" src="./images/store/food-00001-small.png" alt="food recommended 2">
+                    <img class="favor-icon" src="./images/theme/favorite_icon.svg" alt="food favorite icon">
+                  </div>
+                  <h2 class="iten-title">Berry mango combo</h2>
+                  <div class="iten-price">
+                    <div class="iten-value">
+                      <img class="currency-unit" src="./images/theme/currency_001_orange.svg" alt="Currency unit icon">
+                      <p class="price-value">2,000</p>
+                    </div>
+                    <span class="iten-add-basket"><img src="./images/theme/plus_icon.svg" alt="Food add basket"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="store-tab">
+              <ul class="tab-container">
+                <li class="section-title active">Hottest</li>
+                <li class="section-title">Popular</li>
+                <li class="section-title">New Combo</li>
+              </ul>
+              <div class="store-itens-container">
+                <div class="store-iten iten-id001">
+                  <div class="image-container">
+                    <div class="grid-space"></div>
+                    <a href="#panel5" onclick="scrollfRight(5, 5)">
+                      <img class="iten-img" src="./images/store/food-00003-small.png" alt="food recommended 1">
+                    </a>
+                    <img class="favor-icon" src="./images/theme/favorite_icon.svg" alt="food favorite icon">
+                  </div>
+                  <a href="#panel5" onclick="scrollfRight(5, 5)">
+                    <h2 class="iten-title">Quinoa fruit salad</h2>
+                  </a>
+                  <div class="iten-price">
+                    <div class="iten-value">
+                      <img class="currency-unit" src="./images/theme/currency_001_orange.svg" alt="Currency unit icon">
+                      <p class="price-value">2,000</p>
+                    </div>
+                    <span class="iten-add-basket"><img src="./images/theme/plus_icon.svg" alt="Food add basket"></span>
+                  </div>
+                </div>
+                <div class="store-iten iten-id002">
+                  <div class="image-container">
+                    <div class="grid-space"></div>
+                    <img class="iten-img" src="./images/store/food-00004-small.png" alt="food recommended 1">
+                    <img class="favor-icon" src="./images/theme/favorite_icon.svg" alt="food favorite icon">
+                  </div>
+                  <h2 class="iten-title">Tropical fruit salad</h2>
+                  <div class="iten-price">
+                    <div class="iten-value">
+                      <img class="currency-unit" src="./images/theme/currency_001_orange.svg" alt="Currency unit icon">
+                      <p class="price-value">2,000</p>
+                    </div>
+                    <span class="iten-add-basket"><img src="./images/theme/plus_icon.svg" alt="Food add basket"></span>
+                  </div>
+                </div>
+                <div class="store-iten iten-id003">
+                  <div class="image-container">
+                    <div class="grid-space"></div>
+                    <img class="iten-img" src="./images/store/food-00005-small.png" alt="food recommended 1">
+                    <img class="favor-icon" src="./images/theme/favorite_icon.svg" alt="food favorite icon">
+                  </div>
+                  <h2 class="iten-title">Melon fruit salad</h2>
+                  <div class="iten-price">
+                    <div class="iten-value">
+                      <img class="currency-unit" src="./images/theme/currency_001_orange.svg" alt="Currency unit icon">
+                      <p class="price-value">2,000</p>
+                    </div>
+                    <span class="iten-add-basket"><img src="./images/theme/plus_icon.svg" alt="Food add basket"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel5">
+        <div class="panel-container">
+          <div class="panel-header">
+            <div class="header-container">
+              <a href="#panel4"><img src="./images/theme/back_icon.svg" alt="Back icon" onclick="scrollfLeft(4, 5)"><span onclick="scrollfLeft(4, 5)">Go back</span></a>
+              <img src="./images/store/food-00003.png" alt="Quinoa Fruit Salad image">
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="body-container">
+              <div class="desc-header">
+                <h1 class="iten-name">Quinoa Fruit Salad</h1>
+                <div class="qtd-container">
+                  <div class="qtd-btns">
+                    <button class="qtd-btn"><img src="./images/theme/minus-icon.svg" alt="Minus add icon"></button>
+                    <span class="itens-qtd">1</span>
+                    <button class="qtd-btn"><img src="./images/theme/plus_icon.svg" alt="Plus add icon"></button>
+                  </div>
+                  <div class="total-value"><img src="./images/theme/currency_001_black.svg" alt="currency unit"><span>2,000</span></div>
+                </div>
+              </div>
+              <hr>
+              <div class="desc-tags">
+                <h2 class="tags-title">This combo contains:</h2>
+                <div class="tags-container">
+                  <span class="tag-iten">Red Quinoa</span>
+                  <span class="tag-iten">Lime</span>
+                  <span class="tag-iten">Honey</span>
+                  <span class="tag-iten">Blueberries</span>
+                  <span class="tag-iten">Mango</span>
+                  <span class="tag-iten">Strawberries</span>
+                  <span class="tag-iten">Fresh Mint</span>
+                </div>
+              </div>
+              <hr>
+              <div class="desc-text">If you are looking for a new fruit salad to eat today, quinoa is the perfect brunch for you. make</div>
+              <div class="store-options">
+                <div class="favor-icon"><img src="./images/theme/favorite_icon.svg" alt="Favorite icon"></div>
+                <button class="add-to-basket">Add To Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
