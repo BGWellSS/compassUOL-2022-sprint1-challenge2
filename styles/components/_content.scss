@@ -2,11 +2,13 @@
 
 .panel-content {
   text-align: center;
+
   .panel-title {
     font-size: $title-font-size;
     font-weight: 600;
     line-height: calc($title-font-size * 1.3);
   }
+
   .panel-description {
     font-size: $descr-font-size;
     font-weight: 400;
@@ -14,13 +16,16 @@
     margin-top: 2.5rem;
   }
 }
+
 #panel1 {
   font-family: $font-family-logo;
+
   .panel-content {
     img {
       max-width: 113px;
       max-height: 164.94px;
     }
+
     a {
       display: flex;
       align-items: center;
@@ -28,10 +33,12 @@
       text-decoration: none;
       color: #ffffff;
     }
+
     span {
       padding: 0 46px;
       background-color: $main-color;
       border-radius: 16px 0;
+
       p {
         font-size: 2.4rem;
         line-height: 4rem;
@@ -39,8 +46,11 @@
     }
   }
 }
-#panel2, #panel3 {
+
+#panel2,
+#panel3 {
   display: block;
+
   .upside {
     display: flex;
     justify-content: center;
@@ -50,6 +60,7 @@
     width: 100%;
     height: calc(57vh - 20px);
   }
+
   .bottomside {
     display: flex;
     flex-direction: column;
@@ -58,12 +69,14 @@
     height: calc(43vh - 20px);
     font-family: $font-family-desc;
     padding-top: 40px;
+
     .desc-title {
       font-weight: bold;
       font-size: 1.6rem;
       letter-spacing: -0.01rem;
       color: #27214D;
     }
+
     .desc-content {
       font-size: 1.6rem;
       line-height: 2.4rem;
@@ -72,6 +85,7 @@
       color: #5D577E;
     }
   }
+
   .desc-container {
     box-sizing: content-box;
     width: 100%;
@@ -79,6 +93,7 @@
     padding: 0 24px;
   }
 }
+
 #panel3 {
   .bottomside {
     form {
@@ -86,6 +101,7 @@
       flex-direction: column;
       width: 100%;
     }
+
     #name {
       height: 54px;
       margin-top: 17px;
@@ -94,12 +110,267 @@
       border-radius: 10px;
       padding: 16px 0 16px 15px;
       font-size: 1.6rem;
+
       &:focus {
         outline: 0;
       }
+
       &::placeholder {
         color: rgba (194, 189, 189, 0.7);
       }
     }
+  }
+}
+
+#panel4 {
+  font-family: $font-family-desc;
+
+  // Header
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+
+  // Header A
+  .heada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-greetings {
+    margin-left: 16px;
+  }
+
+  .user-basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  // Header B
+  .headb {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 24px;
+    background-color: #F5F5F5;
+    border-radius: 16px 0 0 16px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 0 16px 16px 0;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .settings-icon {
+    margin-left: 4px;
+    padding: 19px 8px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  // Store Filters
+  .store-filters {
+    background: #FAFAFA;
+    padding: 4px 0;
+    margin-top: 18px;
+  }
+
+  .filter-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .filter-iten {
+    padding: 8px 16px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    &~.filter-iten {
+      margin-left: 8px;
+    }
+  }
+
+  .filter-text {
+    display: block;
+    width: max-content;
+  }
+
+  // Recommended section
+  .store-recommended,
+  .store-tab {
+    margin: 36px 0 0 24px;
+
+    .section-title {
+      color: #27214D;
+      font-size: 1.8rem;
+      line-height: 3rem;
+
+      &.active::after {
+        content: "";
+        display: block;
+        background: $main-color;
+        height: 2px;
+        width: 56px;
+      }
+    }
+  }
+
+  .store-itens-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .store-iten {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 140px;
+    max-width: 140px;
+    height: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    padding: 8px;
+    box-shadow: 0px 30px 60px rgba(32, 32, 32, 0.05);
+    border-radius: 16px;
+
+    &~.store-iten {
+      margin-left: 24px;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 2;
+      padding: 8px 8px 0 8px;
+      width: 100%;
+
+      .iten-img {
+        max-height: 64px;
+        max-width: 90px;
+      }
+
+      .favor-icon {
+        margin-left: 4px;
+        align-self: start;
+      }
+    }
+
+    .iten-title {
+      display: block;
+      width: max-content;
+      margin: 8px 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      letter-spacing: -0.01rem;
+      color: #27214D;
+    }
+
+    .iten-price {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .iten-value {
+      display: flex;
+      align-items: center;
+    }
+
+    .price-value {
+      margin-left: 4px;
+      color: $main-color-2;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.7rem;
+      letter-spacing: -0.01em;
+    }
+
+    .iten-add-basket {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+      background: #FFF2E7;
+      border-radius: 100px;
+    }
+  }
+
+  // Store Tab
+  .store-tab {
+    margin: 40px 0 0 24px;
+
+    .section-title {
+      list-style: none;
+      color: #253F66;
+      opacity: 0.4;
+
+      &~.section-title {
+        margin-left: 24px;
+      }
+
+      &.active {
+        opacity: 1;
+        color: #27214D;
+
+        &::after {
+          width: 38px;
+        }
+      }
+    }
+  }
+
+  .tab-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .iten-id001 {
+    background: #FFFCF2;
+  }
+
+  .iten-id002 {
+    background: #FEF4F4;
+  }
+
+  .iten-id003 {
+    background: #F1EFF6;
   }
 }

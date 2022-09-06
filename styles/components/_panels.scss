@@ -2,6 +2,7 @@
 
 .panels {
   background-color: $main-color;
+
   .panels-container {
     height: 100vh;
     max-width: 45rem;
@@ -11,6 +12,7 @@
     border-top: 20px solid #363636;
     border-bottom: 20px solid #363636;
     border-radius: 25px;
+
     .panel {
       display: flex;
       align-items: center;
@@ -18,18 +20,21 @@
       height: calc(100vh - 40px);
       width: 100%;
       background: #ffffff;
+
       .panel-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 3.5rem;
       }
+
       &.scroll-left {
         .panel-container {
           -webkit-animation: moveFromRight 1s ease both;
           animation: moveFromRight 1s ease both;
         }
       }
+
       &.scroll-right {
         .panel-container {
           -webkit-animation: moveFromLeft 1s ease both;
@@ -39,7 +44,9 @@
     }
   }
 }
-#panel2, #panel3 {
+
+#panel2,
+#panel3 {
   .panel-container {
     display: flex;
     flex-direction: column;
@@ -49,18 +56,39 @@
     width: 100%;
   }
 }
+
+#panel4 {
+  .panel-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 //Animations keyframes
 // - From Left
 @-webkit-keyframes moveFromLeft {
-  from { -webkit-transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(-100%);
+  }
 }
+
 @keyframes moveFromLeft {
-  from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
+
 // - From Right
 @-webkit-keyframes moveFromRight {
-  from { -webkit-transform: translateX(100%); }
+  from {
+    -webkit-transform: translateX(100%);
+  }
 }
+
 @keyframes moveFromRight {
-  from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
