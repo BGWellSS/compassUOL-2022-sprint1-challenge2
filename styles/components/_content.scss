@@ -39,3 +39,43 @@
     }
   }
 }
+#panel2 {
+  display: block;
+  .upside {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 34px;
+    background-color: $main-color;
+    width: 100%;
+    height: calc(57vh - 20px);
+  }
+  .bottomside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(43vh - 20px);
+    font-family: $font-family-desc;
+    padding-top: 40px;
+    .desc-title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      letter-spacing: -0.01rem;
+      color: #27214D;
+    }
+    .desc-content {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.01rem;
+      margin-top: 8px;
+      color: #5D577E;
+    }
+  }
+  .desc-container {
+    box-sizing: content-box;
+    width: 100%;
+    max-width: 330px;
+    padding: 0 24px;
+  }
+}

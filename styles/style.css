@@ -69,6 +69,15 @@ a {
   animation: moveFromLeft 1s ease both;
 }
 
+#panel2 .panel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
 @-webkit-keyframes moveFromLeft {
   from {
     -webkit-transform: translateX(-100%);
@@ -126,6 +135,47 @@ a {
 #panel1 .panel-content span p {
   font-size: 2.4rem;
   line-height: 4rem;
+}
+
+#panel2 {
+  display: block;
+}
+#panel2 .upside {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 34px;
+  background-color: #FFA451;
+  width: 100%;
+  height: calc(57vh - 20px);
+}
+#panel2 .bottomside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: calc(43vh - 20px);
+  font-family: "TT Norms Pro";
+  padding-top: 40px;
+}
+#panel2 .bottomside .desc-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: -0.01rem;
+  color: #27214D;
+}
+#panel2 .bottomside .desc-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.01rem;
+  margin-top: 8px;
+  color: #5D577E;
+}
+#panel2 .desc-container {
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 330px;
+  padding: 0 24px;
 }
 
 .panel-navigation {
